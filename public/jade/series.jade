@@ -1,0 +1,276 @@
+extends ./layout
+block content
+	.extractable.fullpage
+		.main-theme.flex.flex-col.bg-main.min-h-full.en( style="margin-top:130px")
+				
+			.relative.z-10.pt-24.pb-24(class='sm:pt-8 ')
+				section.container.mx-auto.left-0.right-0.section-margin
+					.test.purecolor(style="height:45px;margin-top:-30px")
+						+pureseries_SVG('series')
+					.flex.flex-col.grid-cols-12(class='md:grid')
+						.flex.flex-col.place-items-start.txtL(class='md:col-span-6 4md:col-span-7')
+							h1.black.text-start.text-5xl.mt-24.mb-12.min-w-max.leading-tight
+								| Versatile Blockchain #[br]features
+								
+							.mt-5.max-w-fit(class='md:mt-4 2xl:mt-10')
+								p.mt-4.sizeLg(class='md:mt-6')
+									| #[b.bolder.purecolor Build] and use the best #[b.bolder.purecolor Web3] applications with Purechain, 
+									| #[br]one of the most #[b.bolder.purecolor secure], #[b.bolder.purecolor robust] and #[b.bolder.purecolor flexible] blockchain implementations 
+								.flex.flex-col.mt-12(class='md:col-span-6 4md:col-span-7')
+									.block(class='md:block')
+										p.block.h7.text-center.my-8(class='md:text-left 2xl:my-[2.375rem]')
+											
+										.grid.grid-cols-1.gap-y-4( class='md:grid-cols-2 md:gap-x-8')
+											+consolebutton('Start Building')
+											+discordbutton('Discord')
+
+				//- section.mx-auto.left-0.right-0.section-margin.container(class='2xl:!mt-40')
+					.flex.flex-col.mt-20(class='2xl:mt-28')
+						.text-center.text-xs.font-medium.leading-4.uppercase.text-tcolor-5(class='md:text-left')
+							| Followed by the strongest
+						.mt-10.flex.flex-row.justify-center.gap-x-12.flex-wrap.gap-4(class='md:justify-start 2xl:gap-12')
+							+partners_SVG('lg')
+							+partners_SVG('lig')
+							+partners_SVG('cj')
+							+partners_SVG('qualcomm')
+
+
+			//- NUMBERS
+			//- +stats('purelightestblueBG pureline white', false, 'pureblueBG')
+			
+			
+			//- END NUMBERS
+			
+
+			//- TOGGLING BLOCKS
+				//- DESKTOP VERSION
+			//- .relative.context.pb-64.pureline
+				section.mx-auto.left-0.right-0.section-margin.container
+					.relative.flex.flex-col(class='md:w-1/2 md:min-w-1/2')
+						.txtL
+							h2.black.text-start.text-3xl.mt-24.mb-12.min-w-max.leading-10
+								| Produce #[br] reliable systems
+					.flex-row.justify-between.w-full.nonez(class='md:flex')
+						.paneltoggle.flex.flex-col.justify-normal.w-full(class='md:flex-row')
+							.relative.flex.flex-col(class='flex-none')
+								.mt-0
+									+explaintoggle("Revolutionizing Smart Contracts", 1)
+									+explaintoggle("Pioneering Interoperability", 0)
+									+explaintoggle("Customized DeFi Solutions", 0)
+									+explaintoggle("Formidable Security", 0)
+									
+								.flex.flex-col.flex-1.mt-10
+									+consolebutton('Start Building')
+							.nonez(class='md:flex')
+								.panel.flex.flex-col.mt-0.flex(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(0)
+									span.px-4.mt-8.font-semibold.text-base.leading-11.tracking-tight(class='2xl:px-0 2xl:mt-16 md:text-base lg:text-lg 2xl:text-xl')
+										| Revolutionizing Smart Contracts
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='md:px-24 2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Launch
+										| dynamic dApps with Pure Series powerful smart contract
+										| layer. Pure Series is the first blockchain to offer auto-executing
+										| smart contracts which empower faster, more innovative and
+										| groundbreaking applications.
+								.panel.none.flex.flex-col.mt-0.flex(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(1)
+									span.px-4.mt-8.font-semibold.text-base.leading-11.tracking-tight(class='2xl:px-0 2xl:mt-16 md:text-base lg:text-lg 2xl:text-xl text-[#343FF5]')
+										| Pioneering Interoperability
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Securely
+										| transfer crypto assets and Web3 data from prominent blockchains to
+										| utilize on any application built on Injective. All dApps within
+										| Injective’s ecosystem can natively access sovereign layer one chains
+										| such as Ethereum, Cosmos and Solana for frictionless interoperable
+										| communication.
+								.panel.none.flex.flex-col.mt-0.flex(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(2)
+									span.px-4.mt-8.font-semibold.text-base.leading-11.tracking-tight(class='2xl:px-0 2xl:mt-16 md:text-base lg:text-lg 2xl:text-xl text-[#343FF5]')
+										| Customized DeFi Solutions
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Injective
+										| offers a diverse array of novel Web3 modules & primitives such
+										| as the world’s first on-chain derivatives orderbook. Developers can
+										| rapidly build sophisticated dApps with plug-and-play modules and
+										| deep liquidity support from day one.
+								.panel.none.flex.flex-col.mt-0.flex(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(3)
+									span.px-4.mt-8.font-semibold.text-base.leading-11.tracking-tight(class='2xl:px-0 2xl:mt-16 md:text-base lg:text-lg 2xl:text-xl text-[#343FF5]')
+										| Formidable Security
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Deploy
+										| applications with peace of mind as Injective is secured by globally
+										| distributed validator nodes with the largest institutions
+										| contributing to the proof-of-stake network. Injective employs a
+										| Tendermint PoS consensus to secure transactions with instant
+										| finality.
+					
+					
+					
+						//- MOBILE VERSION
+					.paneltoggle.flex.flex-col(class='md:hidden')
+						.mt-10
+							.togglerBG.shadow.mr-6.mb-1.rounded-2xl.px-4.py-2.items-center.w-full.flex.flex-col.justify-between.purelightestblueBG(class='2xl:p-4 hover:cursor-pointer 2xl:w-[388px]')
+								+explainsmalltoggle("Revolutionizing Smart Contracts", 1)
+								.panel.flex.flex-col.mt-5.flex.mb-10(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(0)
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Launch
+										| dynamic dApps with Injective’s powerful CosmWasm smart contract
+										| layer. Pure Series is the first blockchain to offer auto-executing
+										| smart contracts which empower faster, more innovative and
+										| groundbreaking applications.
+							.togglerBG.shadow.mr-6.mb-1.rounded-2xl.px-4.py-2.items-center.w-full.flex.flex-col.justify-between(class='2xl:p-4 hover:cursor-pointer 2xl:w-[388px]')
+								+explainsmalltoggle("Pioneering Interoperability", 0)
+								.panel.none.flex.flex-col.mt-5.flex.mb-10(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(1)
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Securely
+										| transfer crypto assets and Web3 data from prominent blockchains
+										| to utilize on any application built on Pure Series. All dApps
+										| within Pure Series ecosystem can natively access sovereign layer
+										| one chains such as Ethereum, Cosmos and Solana for frictionless
+										| interoperable communication.
+							.togglerBG.shadow.mr-6.mb-1.rounded-2xl.px-4.py-2.items-center.w-full.flex.flex-col.justify-between(class='2xl:p-4 hover:cursor-pointer 2xl:w-[388px]')
+								+explainsmalltoggle("Customized DeFi Solutions", 0)
+								.panel.none.flex.flex-col.mt-5.flex.mb-10(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(0)
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Pure Series
+										| offers a diverse array of novel Web3 modules & primitives
+										| such as the world’s first on-chain derivatives orderbook.
+										| Developers can rapidly build sophisticated dApps with
+										| plug-and-play modules and deep liquidity support from day
+										| one.
+							.togglerBG.shadow.mr-6.mb-1.rounded-2xl.px-4.py-2.items-center.w-full.flex.flex-col.justify-between(class='2xl:p-4 hover:cursor-pointer 2xl:w-[388px]')
+								+explainsmalltoggle("Formidable Security", 0)
+								.panel.none.flex.flex-col.mt-5.flex.mb-10(class='md:mt-10')
+									.flex.justify-center(class='h-48')
+										+explains_SVG(0)
+									span.px-4.text-base.tracking-wide.mt-2.w-full(class='2xl:px-0 md:text-tiny lg:text-sm 2xl:text-lg leading-[1.875rem] 2xl:leading-[2.125rem]')
+										| Deploy
+										| applications with peace of mind as Pure Series is secured by
+										| globally distributed validator nodes with the largest
+										| institutions contributing to the proof-of-stake network.
+										| Pure Series employs a Tendermint PoS consensus to secure
+										| transactions with instant finality.
+
+
+
+			- let seriesintro = pureseries_content.data.intro ;
+			- let series = pureseries_content.data.series ;
+			
+			+log(series)
+			
+			#seriesdescribe.relative.context.purelightestblueBG.pt-12.paneltoggle.pureline
+				section.mx-auto.left-0.right-0.section-margin(class='md:!px-2 2xl:!px-5')
+					.px-4.p-11(class='md:pt-16 md:p5 md:rounded-xl 2xl:rounded-3xl')
+						.container.mx-auto.flex.flex-col
+							.flex.flex-col.items-center(class='md:flex-row')
+								h2.black.txtL.text-3xl.my-12.min-w-max.leading-10(class="md:w-1/2") 
+									!= render('| ' + seriesintro.title) 
+								span.txtR.text-base.purelightestblueUpBG.p-6.rounded-2xl(class='md:mt-0 leading-[1.875rem] md:text-tiny md:leading-[200%] 2xl:text-lg 2xl:leading-10 md:w-1/2')
+									!= render('| ' + seriesintro.intro)
+							.m-0
+								.flex.flex-row.gap-x-4.sizeSm
+									
+									ul.list-none.py-4.flex.items-center
+										- for(let i = 0 ; i < series.length ; i++) {
+											li.flex-none.paneltoggler.cursor-pointer.items-center.leading-5.font-medium.tracking-3x-tighter(class='md:leading-4 xl:leading-5 md:font-semibold xl:font-medium')
+												.flex.bg-transparent.border-b-2.border-transparent.items-center
+													a.seriestoggler.togglerBG.rounded-2xl.Hpad.block.box-content(href="#/series/" + series[i].path, class='md:text-4xs 4md:text-xs xl:text-sm' + (i == 0 ? ' pureblueBG white': ''))
+														!= render('| ' + series[i].name)
+												.box-content.pb-3.pr-6.border-b-2.border-transparent(class='xl:pr-12 md:h-8 4md:h-9 lg:h-10')
+										- }
+										
+								
+
+					.mx-auto.left-0.right-0.container
+					
+						- for(let i = 0 ; i < series.length ; i++) {
+							.panel.flex.flex-col.gap-4.py-10(class='sm:flex-row sm:justify-between' + (i == 0 ? '' : ' none'))
+								.txtR(class='sm:h-full sm:w-1/3')
+									.relative.mt-24(class="sm:pr-4")
+										.inlineblock.pureseries.puremain.dark.sizeXXLg
+											span.block.floatL
+												em.block
+													span.none P
+											!= render('| ' + series[i].name)
+										
+										
+										- let serie = series[i] ;
+										hr.bg-gray-line.mt-6
+										- if(!!serie.desc){
+											.flex.flex-col.mt-4(class='xl:mt-5 2xl:mt-6')
+												span.mb-4.block.font-medium.text-2xl.leading-tight.pureblue.txtL(class='md:text-lg lg:text-[20px] xl:text-xl 2xl:text-2xl md:leading-[128%] 2xl:leading-10 tracking-[0.01em]')
+													!= render('| ' + serie.desc.title || '')
+												hr.mb-6
+												span.block.text-tcolor-2.mt-2(class='md:text-xs 4md:text-[13px] lg:text-tiny xl:text-base md:leading-[180%]')
+													!= render('| ' + serie.desc.content || '')
+											- if(serie.desc.utilizes){
+												.mt-6(class='md:mt-4 xl:mt-5 2xl:mt-6')
+													span.block.font-bold.uppercase(class='md:text-[13px] lg:text-tiny md:leading-[170%]')
+														| Utilizes
+													span.block.text-tcolor-2.mt-2(class='md:text-xs 4md:text-[13px] lg:text-tiny xl:text-base md:leading-[180%]')
+														!= render('| ' + serie.desc.utilize || '')
+											- }
+										- }
+								.evenoddblocks.mb-48( class='sm:w-3/4 md:flex')
+									.grid.grid-cols-2.items-center.gap-4( class='2xl:gap-8')
+										- let blocks = serie.blocks
+										- if(!!blocks && blocks.length){
+											- for(let i = 0 ; i < blocks.length ; i++){
+												- let block = blocks[i] ;
+												.rounded-2xl.describlock.purelightestblueDownBG.p-5(class='md:h-full md:py-9 4md:px-6 xl:px-7 xl:py-3xl 2xl:px-9' + ( (i % 2) == 0 ? ' even' : ''))
+													.relative
+														- if(block.nickname){
+															.flex.flex-row.justify-between.items-center
+																.order-2
+																	span.block.text-2xs.text-center.px-2.py-1.bg-gray-3.capitalize.rounded-2xl.white.Hpad.pureblueBG(class='4md:px-3 4md:py-2')
+																		!= render('| ' + block.nickname || '')
+																//- a(href='https://mito.fi/' target='_blank')
+																	.order-1.w-12.h-12(class='md:w-[34px] md:h-[34px] xl:w-12 xl:h-12')
+																		img(src='https://injective-dotcom-files.s3.us-east-2.amazonaws.com/a8b3ff8a-3366-4d4e-9202-75e539b16017.png')
+														- }
+														span.block.mt-4.font-medium.text-2xl.lh14.txtC
+															!= render('| ' + block.title || '')
+														hr.bg-gray-line.mt-6
+														.flex.flex-col.mt-4(class='xl:mt-5 2xl:mt-6').txtL
+															span.block.font-bold.uppercase.pureblue(class='md:text-[13px] lg:text-tiny leading-[170%]')
+																| Feature
+															span.block.text-tcolor-2.mt-2(class='md:text-xs 4md:text-[13px] lg:text-tiny xl:text-base md:leading-[180%]')
+																!= render('| ' + block.feature || '')
+														- if(block.utilizes){
+															.mt-6(class='md:mt-4 xl:mt-5 2xl:mt-6').txtR
+																span.block.font-bold.uppercase.pureblue(class='md:text-[13px] lg:text-tiny md:leading-[170%]')
+																	| utilizes
+																span.block.text-tcolor-2.mt-2(class='md:text-xs 4md:text-[13px] lg:text-tiny xl:text-base md:leading-[180%]')
+																	!= render('| ' + block.utilizes || '')
+														- }
+											- }
+										- }
+						- }
+					
+						
+			.relative.context.pureline.TpadXXLg
+				section.mx-auto.left-0.right-0.mb-24.container.flex.flex-wrap.gap-y-4(class="sm:flex-col-2")
+					.flex.flex-col.flex-none(class='2xl:flex')
+						h2.black.txtL.text-3xl.my-12.min-w-max.leading-10(class="md:w-2/3")
+							| Verified and Approved #[br] Technology
+						.mt-10.relative(class='md:mt-8 2xl:mt-11')
+							.flex.flex-row.gap-x-4
+								.flex.flex-col-reverse.patenttoggler
+									+normalbutton('View our Patents')
+					+patents(false)
+						
+
+					
+			.relative.context.purelightestblueBG.pureline
+				+startnow()

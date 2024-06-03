@@ -1,0 +1,40 @@
+
+
+
+.rel.fullW.fullH.txtC.white.pureworld
+	
+	.prev.abs(style="top:95px;z-index: 50;").txtC.right0.RmarXXXLg
+		+smallbutton('Previous', '#/home/pureseries/', null, null, 'hideOnSmart')
+	.introworld.fullH
+		.grid.fullH.place-items-center.fullW
+			.purecolorBG.pureline.double.fullW
+				.rel
+					+grad('down', true)
+					+grad('up', true)
+					.grid.grid-cols-2.white.fullH.place-content-stretch
+						
+						.textzone.context.flex-grow
+							.txtL.LmarXXLg.BmarXXXLg
+								.TmarXXXLg.context
+									.test.TmarXXLg(style="max-width:600px")
+										+pureseries_SVG('world')
+								.catchphrase.TmarXXXLg.TpadXLg
+									h3.montserrat.bolder.sizeXXXLg.lh1 Your Gateway to the Thriving Metaverse #[br]#[br]#[p.purelightestblue Experience. Connect. Create.]
+
+								.sizeSm.TmarXXLg.lh1.RmarXXLg.sizeLg.purelightestblue
+									p(style="max-width:450px")
+										| Welcome to #[b PureWorld], a vibrant metaverse built on the power of Web3. #[br]#[br]Unleash a world of possibilities:#[br] 
+										| #[b Immerse Yourself] : Dive into stunning visuals and a user-friendly interface that makes exploring and interacting seamless.#[br] 
+										| #[b Unleash Your Creativity] : Become a Builder! #[b PureWorld] empowers you to create and share your own experiences with ease. #[br]
+										| #[b Connect with the Community] : Forge new connections, engage in shared experiences, and discover endless possibilities within #[b PureWorld].
+							.sizeSm.TmarXXXLg.RmarXXLg.Bmar.floatR
+									+normalbutton("Starting Soon", null, null, 'whiteBG purecolor')
+						div.fullH.rel
+							.abs.imgblock.fullW.fullH.cover.left0.right0(style="background-image:url(/img/world/Background_01.jpg)")
+								span.fullW.fullH.block.hidden World Background
+							.abs.layerblock.fullW.fullH.left0.right0.bluetranspBG(style="background-image:url(/img/world/CharacterImage.png);background-repeat:no-repeat;background-position:right bottom;background-size:contain;")
+								span.fullW.fullH.block.hidden Main Character
+							//- video.fullH(autoplay muted loop )
+								source(src='/video/unity.mp4' type='video/mp4')
+								source(src='/video/unity.ogg' type='video/ogg')
+								| Your browser does not support the video tag.

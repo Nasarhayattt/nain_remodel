@@ -1,0 +1,61 @@
+header#menu.menu.fixed.top0.left0.fullW
+	nav.fullW.fullH
+		- topsections = (topsections.data)? topsections.data : topsections;
+
+		//- each topsection in topsections
+			//- h1= topsection.id
+				- var prefix = 'DKT__' ;
+				- topsection.cleanname = t( prefix + topsection.post.name + '.name') ;
+				- topsection.surname = t( prefix + topsection.post.name + '.surname')
+				- topsection.cleanlink = '/#/' + lang + topsection.path ;
+
+				if(topsection.children)
+					each ch in topsection.children
+						- ch.cleanname = t( prefix + topsection.post.name + '.' + topsection.post.name + '.' + ch.post.name + '.name') ;
+						- ch.surname = t( prefix + topsection.post.name + '.' + topsection.post.name + '.' + ch.post.name + '.surname') ;
+						- ch.cleanlink = '/#/' + lang + ch.path ;
+
+		- t = function(str){return str} ;
+		//- MAIN NAV SECTION LINKS
+		ol.sectionsnav.flowvisible.fullH.context
+			- var other = [].concat(topsections) ;
+			- var home = other.shift() ;
+
+
+			//-  HOME SPECIAL CASE
+			li.floatL.left0.sizeLg.fullH.RmarXXXXLg(id= "global_" + 'home', class= "global_" + 'home' style="width:188px")
+				//-a.block.fullW.fullH(href= '/#/' + lang + '/home/')
+				a.block.fullW.fullH(href= isWallet ? '#/wallet/' : '#/home/purechain/')
+					//- span.hidden= t('MMAI')
+					.fullH.black.padLg
+						+pureseries_SVG(isWallet ? 'wallet' : 'chain')
+
+			+log(topsections) ;
+
+			//-  OTHERS CASE
+			each navsection in other
+				- let name = navsection.name ;
+				- let data = navsection.data || {} ;
+				- let hidemenu = data.hidefrommenu ;
+				
+				- if(!!!hidemenu){
+					li.others.floatL.rel.LmarSm(id= "global_" + name, class= "global_" + name, style="left:-20px")
+						a.block.Hpad.fullH.inconsolata(href= '#/' + name + '/')
+							span.sizeLg= name
+				- }
+		//- LAGUAGE BAR
+			ul#langnav.langnav.context.floatR.mar.VpadXXXSm.none
+				each language in langs
+					- var active = language.code == lang ? ' active ' : '' ;
+					li.floatL(id= "lang_" + language.code, class= "lang " + active + "lang_" + language.code)
+						a.block.HpadXSm.inconsolata.round.both(href='?lng=' + language.code, lang=language.code)
+							span= language.code
+		.abs.downloadwallet.right0(style="top:12px")
+			.language.floatL
+				a.block.black.padXXSm.Hpad(style="" href="javascript:void(0)")
+					+language() 
+			.download.floatL
+				a.shadow.block.Rmar.TmarXSm.padXSm.HpadXLg.round23.purecolorBG.white(href="#/wallet/")
+					span DOWNLOAD WALLET
+		+grad('down')
+

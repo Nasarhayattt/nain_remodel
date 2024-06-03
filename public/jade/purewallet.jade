@@ -1,0 +1,121 @@
+extends ./layout
+block content
+	//- 
+	
+	- let homesection = topsections[0] ;
+	- let children = homesection.children ;
+	
+	
+	
+	
+	//- VIEWPORT 3D
+	#viewport3D.viewport3D.fixed.left0.right0.top0.bottom0
+		.abs.filtering.fullW.fullH.whitetranspBG.zi3
+	
+	//- 
+		Here all Pages are Full Height from top to the footer zone
+		Sometimes if blocks are intermede blocks they are called .inter for them not to interfere 
+		with the hierarchy of the home navigation
+	
+	
+	include /wallet
+	
+	
+	
+	//- The circular loader 
+	#mainloader.loader.fixed.dkt.zi1(style="left:30px;top:100px;right:auto;")
+		.hidden Loading...
+	
+	
+	
+	
+	//- - console.log(topsections)
+	//- Loading the .js app
+	script(type='text/javascript' src='/js/strawnode.js?starter=./nodeless_app/')
+	
+	//- script(src="//unpkg.com/three-globe")
+	
+	//- Initalizing all js + the js Hash Address System
+	script.
+		
+		window.debug = true ;
+
+		//- window.trace = function(){
+		//- 	return [].concat(arguments) ;
+		//- }
+		
+		/*
+		let strapi = {
+			get:(api, cb)=>{
+				new AjaxRequest().load('/api/'+api, function(req, res){
+					trace(JSON.parse(res)) ;
+					if(!!cb) cb(req, res) ;
+				}) ;
+			}
+		} ;
+		*/
+		
+		///////////////////// IMAGES
+		//- $('img').each(function(i, el){
+		//- 	$(el).attr('src', '') ;
+		//- })
+
+		//- $('.cover').each(function(i, el){
+		//- 	$(el).css({"background-image":''}) ;
+		//- })
+
+		var ajaxified = true ;
+		let sections_JSON = !{JSON.stringify(topsections)} ;
+		window.Data = sections_JSON ;
+		
+		
+		
+		/*
+		ERROR HANDLING -> MAKING ERROR SECTION
+		
+		window.Data.push( {
+			level: 1,
+			id: "777", 
+			name: "404", 
+			path: "/404/",
+			position:40,
+			post:{
+				name: "404",
+				vars: {
+					behavior:{
+						'@jade':'/jade/404/', 
+						'@json':'/json/404/', 
+						'@focus':'focus', 
+						'@toggle':'toggle',
+						"sectionId":'777'
+					}
+				} 
+			}
+		}) ;
+		*/
+		
+		//- Express.app.fire('JSAddress') ;
+		
+		
+		/*
+		new AjaxRequest().load('/content/', function(req, res){
+			
+			trace('NOW THE PAGE HAS LOADED')
+
+			var idsectionurl = '/content/section/' + window.Data[1].children[0].id ;
+			//- var idsectionurl = '/content/section/' + window.Data[0].id ;
+			
+			new AjaxRequest().load(idsectionurl, function(req, res){
+				//- trace(res)
+				trace('ALL OK NOW')
+			})
+
+			//- exitLoader() ;
+			
+			Express.app.fire('JSAddress') ;
+
+		})
+		*/
+
+		//}
+	
