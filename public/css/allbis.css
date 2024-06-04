@@ -2484,7 +2484,7 @@ a				{
 }
 
 .padLg						{
-  padding:1.25em !important
+  padding:0.9em !important
 }
 
 .padXLg						{
@@ -2661,10 +2661,6 @@ a				{
 
 .HpadXXLg, .RpadXXLg		{
   padding-right:1.75em !important
-}
-
-.VpadXXXLg, .TpadXXXLg		{
-  padding-top:2.0em !important
 }
 
 .VpadXXXLg, .BpadXXXLg		{
@@ -105730,138 +105726,249 @@ img,
   }
 }
 --------------------------------------
-#menu.menu {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  background-color: #ffffff !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  z-index: 1000 !important;
-  font-family: 'Inter', sans-serif !important;
-  display: flex !important;
-  align-items: center !important;
-  padding: 10px 20px !important;
-}
-
-/* Style for the logo */
-#menu .global_home a {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 200px !important; /* Adjust the width to fit the logo */
-  height: 60px !important; /* Adjust the height as needed */
-}
-
-#menu .global_home a svg {
-  width: 150px !important; /* Adjust the size of the SVG logo */
-  height: auto !important;
-}
-
-/* Navigation styles */
-#menu .sectionsnav {
-  display: flex !important;
-  align-items: center !important;
-  height: 100% !important;
-  list-style: none !important;
+* {
   margin: 0 !important;
   padding: 0 !important;
-  flex-grow: 1 !important;
-  justify-content: center !important;
+  box-sizing: border-box !important;
 }
 
-#menu .sectionsnav li {
-  position: relative !important;
+body {
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #f4f4f4 !important;
+  color: #333 !important;
+}
+
+header#menu.menu.fixed.top0.left0.fullW {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  z-index: 1000 !important;
+}
+
+nav.fullW.fullH {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 20px !important;
+}
+
+header#menu .logo {
+  font-size: 1.5em !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-weight: bold !important;
+}
+
+ol.sectionsnav.flowvisible.fullH.context {
+  display: flex !important;
+  align-items: center !important;
+}
+
+ol.sectionsnav.flowvisible.fullH.context li {
+  list-style: none !important;
   margin-right: 20px !important;
 }
 
-#menu .sectionsnav li a {
-  display: block !important;
-  padding: 10px 15px !important;
-  color: #333 !important;
+ol.sectionsnav.flowvisible.fullH.context li a {
   text-decoration: none !important;
-  transition: color 0.3s ease, transform 0.3s ease !important;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-}
-
-#menu .sectionsnav li a:hover {
-  color: #1a73e8 !important;
-  transform: translateY(-3px) !important;
-}
-
-#menu .sectionsnav li a::after {
-  content: '' !important;
-  position: absolute !important;
-  width: 100% !important;
-  height: 2px !important;
-  background-color: #1a73e8 !important;
-  left: 0 !important;
-  bottom: -5px !important;
-  transform: scaleX(0) !important;
-  transition: transform 0.3s ease !important;
-}
-
-#menu .sectionsnav li a:hover::after {
-  transform: scaleX(1) !important;
-}
-
-/* Language bar styles */
-#menu #langnav {
-  display: flex !important;
-  align-items: center !important;
-}
-
-#menu #langnav li {
-  margin-left: 10px !important;
-}
-
-#menu #langnav li a {
-  display: block !important;
-  padding: 5px 10px !important;
-  color: #333 !important;
-  text-decoration: none !important;
-  transition: color 0.3s ease !important;
-}
-
-#menu #langnav li a:hover {
-  color: #1a73e8 !important;
-}
-
-/* Download wallet button styles */
-#menu .downloadwallet {
-  margin-left: auto !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-#menu .downloadwallet a {
-  display: block !important;
-  margin-right: 10px !important;
-  padding: 10px 20px !important;
-  background-color: #1a73e8 !important;
   color: #fff !important;
+  padding: 10px 15px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+ol.sectionsnav.flowvisible.fullH.context li a:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+ul#langnav.langnav.context.floatR.mar.VpadXXXSm.none {
+  display: flex !important;
+}
+
+ul#langnav.langnav.context.floatR.mar.VpadXXXSm.none li {
+  list-style: none !important;
+  margin-left: 15px !important;
+}
+
+ul#langnav.langnav.context.floatR.mar.VpadXXXSm.none li a {
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+ul#langnav.langnav.context.floatR.mar.VpadXXXSm.none li a:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.abs.downloadwallet.right0 {
+  position: absolute !important;
+  top: 12px !important;
+  right: 20px !important;
+}
+
+.download a {
+  background-color: #2575fc !important;
+  color: #fff !important;
+  padding: 10px 20px !important;
   border-radius: 23px !important;
   text-decoration: none !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.download a:hover {
+  background-color: #6a11cb !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+}
+--------------------------------------------------------------
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Arial, sans-serif' !important;
+  background: #f8f9fa !important;
+  color: #333 !important;
+}
+
+.page {
+  position: relative !important;
+  height: 100vh !important;
+  text-align: center !important;
+  background: linear-gradient(357deg, #0000, #1a202c47) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: hidden !important;
+}
+
+.intro {
+  padding-top: 30px !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  animation: fadeIn 1s ease-in-out !important;
+}
+
+.textblock {
+  padding: 20px !important;
+  background: linear-gradient(135deg, #6a11cb63 0%, #2575fc30 100%) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  margin-bottom: 20px !important;
+  animation: slideUp 1s ease-in-out !important;
+}
+
+.catchphrase h1 {
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+  color: #333 !important;
+  animation: fadeInUp 1s ease-in-out !important;
+}
+
+.catchphrase h2 {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+  color: #555 !important;
+  margin-bottom: 1.5rem !important;
+  animation: fadeInUp 1s ease-in-out 0.2s !important;
+}
+
+.description {
+  font-size: 1.125rem !important;
+  color: #555 !important;
+  margin-bottom: 2rem !important;
+  animation: fadeInUp 1s ease-in-out 0.4s !important;
+}
+
+.call-to-action .btn {
+  width: 100% !important;
+  max-width: 300px !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.375rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  text-align: center !important;
   transition: background-color 0.3s ease, transform 0.3s ease !important;
-}
-
-#menu .downloadwallet a:hover {
-  background-color: #155ab2 !important;
-  transform: translateY(-3px) !important;
-}
-
-/* Additional hover effects for menu items */
-#menu .sectionsnav li a:hover {
-  background-color: rgba(26, 115, 232, 0.1) !important;
-  border-radius: 4px !important;
-}
-
-#menu .sectionsnav li a:hover span {
-  color: #1a73e8 !important;
-}
-
-#menu .sectionsnav li a span {
+  margin: 10px !important;
   display: inline-block !important;
-  transition: color 0.3s ease !important;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.call-to-action .btn-primary {
+  background-color: #3b82f6 !important;
+}
+
+.call-to-action .btn-primary:hover {
+  background-color: #2563eb !important;
+  transform: scale(1.05) !important;
+}
+
+.call-to-action .btn-secondary {
+  background-color: #10b981 !important;
+}
+
+.call-to-action .btn-secondary:hover {
+  background-color: #059669 !important;
+  transform: scale(1.05) !important;
+}
+
+.scrolldown.abs {
+  position: absolute !important;
+  text-align: center !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 25px !important;
+  animation: bounce 2s infinite !important;
+}
+
+.safe.context {
+  text-align: center !important;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0 !important;
+  }
+  to {
+      opacity: 1 !important;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0) !important;
+  }
+  40% {
+      transform: translateY(-10px) !important;
+  }
+  60% {
+      transform: translateY(-5px) !important;
+  }
 }
