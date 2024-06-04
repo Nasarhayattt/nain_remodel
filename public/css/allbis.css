@@ -1255,11 +1255,7 @@ html, body {
   background-color:#000;
 }
 
-.whiteBG{
-  background-color:#FFF;
-}
-
-.lightBG, .lightgrayBG, .lightgrayBG{
+s.lightBG, .lightgrayBG, .lightgrayBG{
   background-color:#CCC;
 }
 
@@ -106289,7 +106285,7 @@ body, html {
   top: 80px !important;
   left: 0 !important;
   height: 45px !important;
-  color: #fff !important;
+  color: #3a6df0 !important;
 }
 
 .purewallet .slides {
@@ -106350,6 +106346,7 @@ body, html {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
+  top: 0px !important;
 }
 
 .purewallet .slide .phoneshot img {
@@ -106414,4 +106411,288 @@ body, html {
 .pureline .eco ul li:first-child a {
   font-weight: bold !important;
   color: #007bff !important;
+}
+-----------------------------------------------------
+.page.rel.fullH.txtC.slides.purewallet .prev.abs {
+  top: 95px !important;
+  z-index: 50 !important;
+  text-align: center !important;
+  right: 0 !important;
+}
+
+.page.rel.fullH.txtC.slides.purewallet .next.abs {
+  bottom: 25px !important;
+  z-index: 50 !important;
+  text-align: center !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.page.rel.fullH.txtC.slides.purewallet .slidenav.abs {
+  bottom: 0px !important;
+  z-index: 50 !important;
+  left: auto !important;
+  right: 20px !important;
+  text-align: center !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.page.rel.fullH.txtC.slides.purewallet .prev.abs .smallbutton,
+.page.rel.fullH.txtC.slides.purewallet .next.abs .smallbutton {
+  background-color: #007BFF !important; /* Blue background */
+  color: #FFFFFF !important; /* White text */
+  border: 2px solid #0056b3 !important; /* Darker blue border */
+  border-radius: 8px !important; /* Rounded corners */
+  padding: 10px 20px !important; /* Padding */
+  font-size: 16px !important; /* Font size */
+  font-weight: bold !important; /* Bold text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease !important; /* Transition for hover effect */
+}
+
+.page.rel.fullH.txtC.slides.purewallet .prev.abs .smallbutton:hover,
+.page.rel.fullH.txtC.slides.purewallet .next.abs .smallbutton:hover {
+  background-color: #0056b3 !important; /* Darker blue background on hover */
+  color: #e0e0e0 !important; /* Lighter text on hover */
+  transform: scale(1.05) !important; /* Slightly larger on hover */
+}
+
+.page.rel.fullH.txtC.slides.purewallet .slidenav.abs ol.context.inlineblock.marginauto.widthauto.pureblue li a {
+  color: #007BFF !important; /* Blue text */
+  text-decoration: none !important; /* Remove underline */
+  margin: 0 10px !important; /* Margin between items */
+  font-size: 20px !important; /* Font size */
+}
+
+.page.rel.fullH.txtC.slides.purewallet .slidenav.abs ol.context.inlineblock.marginauto.widthauto.pureblue li a.walletcolor {
+  color: #FF4500 !important; /* Highlighted color */
+}
+---------------------------------------------------------------
+#foot.black.foot.rel.BpadXXXXLg.whiteBG.none {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+  border-top: 1px solid #CCC !important;
+  z-index: 300 !important;
+  padding: 40px 20px !important;
+  color: #fff !important;
+}
+
+#foot .foothome.mar {
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#foot .foothome.mar .home a {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  text-align: center !important;
+  color: #fff !important;
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+#foot .copyright.abs.right0.bottom0 {
+  position: absolute !important;
+  right: 20px !important;
+  bottom: 10px !important;
+  font-size: 0.9em !important;
+  color: #ccc !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL {
+  margin: 0 auto !important;
+  text-align: left !important;
+  max-width: 1200px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line {
+  list-style: none !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit {
+  padding: 20px !important;
+  flex: 1 1 20% !important;
+  box-sizing: border-box !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit h6 {
+  margin-bottom: 15px !important;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit ul.sub {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit ul.sub li {
+  margin-bottom: 10px !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit ul.sub li a {
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit ul.sub li a:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit.lastUnit.txtR {
+  text-align: right !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit.size1of5.odd {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+#foot nav.footnav.mar.HmarXXLg.txtL ol.line li.unit a.unclickable {
+  color: #999 !important;
+  pointer-events: none !important;
+}
+-------------------------------------------------------------------------
+.rel.fullW.fullH.txtC.white.pureworld {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%) !important;
+  color: #fff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .prev.abs {
+  top: 95px !important;
+  z-index: 50 !important;
+  text-align: center !important;
+  right: 0 !important;
+  margin-right: 30px !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .introworld.fullH {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .grid.fullH.place-items-center.fullW {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .purecolorBG.pureline.double.fullW {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .purecolorBG.pureline.double.fullW .rel {
+  position: relative !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .purecolorBG.pureline.double.fullW .rel .grid.grid-cols-2.white.fullH.place-content-stretch {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  height: 100% !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding-left: 60px !important;
+  padding-bottom: 60px !important;
+  text-align: left !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .TmarXXXLg.context {
+  margin-top: 60px !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .test.TmarXXLg {
+  max-width: 600px !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .catchphrase.TmarXXXLg.TpadXLg h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bold !important;
+  font-size: 2.5em !important;
+  line-height: 1.2 !important;
+  margin-top: 40px !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .catchphrase.TmarXXXLg.TpadXLg p.purelightestblue {
+  color: #add8e6 !important;
+  font-size: 1.2em !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .sizeSm.TmarXXLg.lh1.RmarXXLg.sizeLg.purelightestblue p {
+  max-width: 450px !important;
+  color: #add8e6 !important;
+  line-height: 1.5 !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .sizeSm.TmarXXXLg.RmarXXLg.Bmar.floatR {
+  margin-top: 40px !important;
+  margin-right: 30px !important;
+  margin-bottom: 30px !important;
+  float: right !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .sizeSm.TmarXXXLg.RmarXXLg.Bmar.floatR .normalbutton {
+  background-color: #fff !important;
+  color: #2575fc !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;
+  font-size: 1em !important;
+  text-transform: uppercase !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .textzone.context.flex-grow .sizeSm.TmarXXXLg.RmarXXLg.Bmar.floatR .normalbutton:hover {
+  background-color: #2575fc !important;
+  color: #fff !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .imgblock.fullW.fullH.cover.left0.right0 {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.rel.fullW.fullH.txtC.white.pureworld .layerblock.fullW.fullH.left0.right0.bluetranspBG {
+  background-repeat: no-repeat !important;
+  background-position: right bottom !important;
+  background-size: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
 }
