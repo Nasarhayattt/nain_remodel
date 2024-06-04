@@ -29,14 +29,14 @@
 							+arrow_dotted_up()
 						a.down.rel.zi3.TmarSm.white(style="bottom:0" href="javascript:void(0)") 
 							+arrow_dotted_down()
-					ol.txtL.pureblue.rel(style="top:100px")
+					ol.txtL.pureblue.rel(style="top:-160px")
 						li
-							a.indent.black.block.VmarXLg.first.HpadSm.txtL(href="javascript:void(0)" style="padding-bottom:5px;height:25px")
+							a.indent.black.block.VmarXLg.first.HpadSm.txtL(href="javascript:void(0)" style="padding-bottom:5px;height:45px")
 								+pureseries_SVG('series')
 						
 						- for(let i = 0 ; i < ls ; i++){
 							li.context
-								a.serieshome.rel.block.flex.flex-row.items-center.HpadSm.gap-x-4.justify-between(href='javascript:void(0)' style="padding-bottom:5px;height:25px;opacity:" + (.8 - ((i)*.2)) + ";")
+								a.serieshome.rel.block.flex.flex-row.items-center.HpadSm.gap-x-4.justify-between(href='javascript:void(0)' style="padding-bottom:5px;height:45px;opacity:" + (.8 - ((i)*.2)) + ";")
 									span.purecolor.fullH.block.floatL.Rmar
 										+pureseries_SVG(series[i].name.toLowerCase(), 'floatL')
 									span.flex-grow.fullH.narr

@@ -4754,10 +4754,6 @@ html{
   background:rgba(255,255,255,.45);
 }
 
-.whitetranspplusBG{
-  background:rgba(255,255,255,.7);
-}
-
 .puretranspBG{
   background:rgba(221,230,255,.7) ;
 }
@@ -105971,4 +105967,451 @@ body, html {
   60% {
       transform: translateY(-5px) !important;
   }
+}
+------------------------------------------------------------------
+
+
+/* Ecosystem Heading */
+.seriesmain h4 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bolder !important;
+  font-size: 2.5rem !important;
+  line-height: 1 !important;
+  color: #000 !important;
+  margin-left: 20px !important;
+  margin-top: 90px !important;
+  animation: slideDown 1s ease-in-out !important;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  position: absolute !important;
+  text-align: center !important;
+  z-index: 350 !important;
+}
+
+.prev {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  right: 30px !important;
+}
+
+.next {
+  bottom: 25px !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.prev .smallbutton, .next .smallbutton {
+  background-color: #3b82f6 !important;
+  color: #fff !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.prev .smallbutton:hover, .next .smallbutton:hover {
+  background-color: #2563eb !important;
+  transform: scale(1.05) !important;
+}
+
+/* Ecosystem List */
+.eco {
+  position: relative !important;
+  margin-top: 130px !important;
+  z-index: 301 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.puremain {
+  margin-left: 30px !important;
+  z-index: 301 !important;
+  width: 350px !important;
+}
+
+.pureblue {
+  color: #007bff !important;
+}
+
+.eco .puremain .up, .eco .puremain .down {
+  display: block !important;
+  margin: 10px auto !important;
+  color: #fff !important;
+  text-align: center !important;
+}
+
+.eco .puremain .up:hover, .eco .puremain .down:hover {
+  color: #ddd !important;
+}
+
+.eco ol {
+  margin-top: 20px !important;
+  padding-left: 20px !important;
+}
+
+.eco ol li {
+  margin-bottom: 20px !important;
+  list-style: none !important;
+}
+
+.eco ol li a {
+  display: block !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  background-color: rgba(0, 123, 255, 0.1) !important;
+  color: #000 !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.eco ol li a:hover {
+  background-color: rgba(0, 123, 255, 0.2) !important;
+  transform: scale(1.05) !important;
+}
+
+
+
+
+
+.slide .catchphrase {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 2.5rem !important;
+  line-height: 1 !important;
+  color: #000 !important;
+}
+
+.slide .othertextes {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  color: #007bff !important;
+  margin-top: 1rem !important;
+}
+
+.slide .othertextes {
+  font-size: 1rem !important;
+  color: #333 !important;
+  margin-top: 1rem !important;
+}
+
+.browseeco .normalbutton {
+  background-color: #10b981 !important;
+  color: #fff !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.browseeco .normalbutton:hover {
+  background-color: #059669 !important;
+  transform: scale(1.05) !important;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0 !important;
+  }
+  to {
+      opacity: 1 !important;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0) !important;
+  }
+  40% {
+      transform: translateY(-10px) !important;
+  }
+  60% {
+      transform: translateY(-5px) !important;
+  }
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateX(0) !important;
+      opacity: 1 !important;
+  }
+}
+--------------------------------------------------- ----
+.page.rel.fullH.txtC.slides.purewallet {
+  background: rgba(52, 144, 220, 0.7) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  animation: fadeIn 1s ease-in-out !important;
+}
+
+.purewallet .prev, .purewallet .next {
+  position: absolute !important;
+  text-align: center !important;
+  z-index: 50 !important;
+}
+
+.purewallet .prev {
+  top: 95px !important;
+  right: 30px !important;
+}
+
+.purewallet .next {
+  bottom: 25px !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.purewallet .prev .smallbutton, .purewallet .next .smallbutton {
+  background-color: #3b82f6 !important;
+  color: #fff !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.purewallet .prev .smallbutton:hover, .purewallet .next .smallbutton:hover {
+  background-color: #2563eb !important;
+  transform: scale(1.05) !important;
+}
+
+.purewallet .slidenav {
+  position: absolute !important;
+  bottom: 0 !important;
+  z-index: 50 !important;
+  left: auto !important;
+  right: 20px !important;
+  text-align: center !important;
+}
+
+.purewallet .slidenav ol {
+  display: inline-block !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.purewallet .slidenav ol li {
+  float: left !important;
+  margin-right: 10px !important;
+  list-style: none !important;
+}
+
+.purewallet .slidenav ol li a {
+  font-size: 1.5rem !important;
+  display: block !important;
+  color: #007bff !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease, transform 0.3s ease !important;
+}
+
+.purewallet .slidenav ol li a:hover {
+  color: #0056b3 !important;
+  transform: scale(1.2) !important;
+}
+
+.purewallet .arrows {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.purewallet .arrowright, .purewallet .arrowleft {
+  width: 2rem !important;
+  height: 3rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #000 !important;
+  z-index: 3 !important;
+}
+
+.purewallet .arrowright {
+  right: 0 !important;
+  margin-right: 20px !important;
+  color: #3a6df0 !important;
+}
+
+.purewallet .arrowleft {
+  left: 0 !important;
+  margin-right: 20px !important;
+  color: #3a6df0 !important;
+}
+
+.purewallet .test {
+  position: absolute !important;
+  top: 80px !important;
+  left: 0 !important;
+  height: 45px !important;
+  color: #fff !important;
+}
+
+.purewallet .slides {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+}
+
+.purewallet .slide {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-content: center !important;
+  align-items: center !important;
+  animation: slideIn 1s ease-in-out !important;
+}
+
+.purewallet .slide section {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  max-width: 1200px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+.purewallet .slide .phonetextblock {
+  position: relative !important;
+  padding: 2rem !important;
+  background: linear-gradient(135deg, #6a11cb63 0%, #2575fc30 100%) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  color: #333 !important;
+}
+
+.purewallet .slide .phonetextblock h2 {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+  text-align: left !important;
+}
+
+.purewallet .slide .phonetextblock p {
+  font-size: 1rem !important;
+  text-align: left !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.purewallet .slide .phoneshot {
+  position: relative !important;
+  padding: 2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.purewallet .slide .phoneshot img {
+  width: 100% !important;
+  max-width: 300px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0 !important;
+  }
+  to {
+      opacity: 1 !important;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-20px) !important;
+      opacity: 0 !important;
+  }
+  to {
+      transform: translateX(0) !important;
+      opacity: 1 !important;
+  }
+}
+----------------------------------------------------
+.pureline .eco ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 20px 0 !important;
+  text-align: left !important;
+}
+
+.pureline .eco ul li {
+  margin-bottom: 20px !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  background-color: rgba(0, 123, 255, 0.1) !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.pureline .eco ul li a {
+  display: block !important;
+  color: #000 !important;
+  text-decoration: none !important;
+  padding: 10px !important;
+}
+
+.pureline .eco ul li:hover {
+  background-color: rgba(0, 123, 255, 0.2) !important;
+  transform: scale(1.05) !important;
+}
+
+.pureline .eco ul li a:hover {
+  color: #0056b3 !important;
+}
+
+.pureline .eco ul li:first-child a {
+  font-weight: bold !important;
+  color: #007bff !important;
 }
